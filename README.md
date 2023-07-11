@@ -12,23 +12,23 @@ This project not only seeks to answer questions about salary trends but also aim
 To accomplish these objectives, we employ a range of analytical techniques and tools, including data preprocessing, exploratory data analysis, feature engineering, and machine learning algorithms. The project utilizes popular libraries like pandas, scikit-learn, and plotly to perform data manipulation, modeling, and visualization.
 
 Here are the components of our project:
-- Part I : Inferential Analysis
+- [Part I : Inferential Analysis](## Part I : Inferential Analysis 🔬🔬)
 
-    - Data Cleaning
+    - [Data Cleaning](### Data Cleaning 🧹 🧽)
     
-    - Exploratory Data Analysis (EDA)
+    - [Exploratory Data Analysis (EDA)](### EDA 📊)
     
-    - Hypothesis Testing
+    - [Hypothesis Testing](### Hypothesis Testing 👩🏻‍🔬)
     
-- Part II : Predictive Analysis
+- [Part II : Predictive Analysis](## Part II : Predictive Analysis 🔮🔮)
 
-    - Linear Regression Model
+    - [Linear Regression Model](### Linear Regression 📈📈)
     
-        - Framing the Problem
+        - [Framing the Problem](#### Framing the Problem 🧮 🤔)
         
-        - Baseline Model
+        - [Baseline Model](#### Baseline Model 🧩)
         
-        - Final Model
+        - [Feature Engineering & Final Model]()
         
     - Multiclass Classification
     
