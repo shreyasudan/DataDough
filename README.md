@@ -78,10 +78,34 @@ And the first few rows of the cleaned dataset `salary`
 |        2023 | SE                 | FT                | Data Scientist           |   175000 | USD               |          175000 | CA                   |              1 | CA                 | M              |
 |        2023 | SE                 | FT                | Data Scientist           |   120000 | USD               |          120000 | CA                   |              1 | CA                 | M              |
 
+### EDA 📊
+As part of our EDA we explored the relationship and the distribution of the following variables:
+1. The Distribution of `salary_in_usd`
+    - **Observations**: The distribution of salaries (USD) is fairly normal, and slightly right-skewed. It's a unimodal histogram with its peak at `$150,000-$155,000`
+    
+      <iframe src="assets/edaFirst.html" width=800 height=600 frameBorder=0></iframe>
+    
+2. The Distribution of `salary_in_usd` with respect to `company_size`
+    - **Observations**: We can derive from the overlaid histogram that the medium companies are generally taller than the smaller and the larger companies. This is because the dataset contains more data-points for medium-sized companies. The boxplots accompanying the histograms confirm that the medium sized companies have more outliers and a higher median than the other two groups.
+  
+      <iframe src="assets/edaSecond.html" width=800 height=600 frameBorder=0></iframe>
 
-<iframe src="assets/edaFirst.html" width=800 height=600 frameBorder=0></iframe>
+3. The average `salary` and `salary_in_usd` as `work_year` increases
+    - **Observations**: There is a steady increase in the mean `salary_in_usd` as the years increase. This could be explained by the usual rise in the general price level or inflation. However, the growth of the mean `salary` is quite peculiar. The `salary` column has a very high standard deviation, because of the disparities in the foreign ecxchange values of the different currencies. Thus, `salary_in_usd` provides a more standardized distribution of salaries.
+    
+      <iframe src="assets/edaThird.html" width=800 height=600 frameBorder=0></iframe>
 
-<iframe src="assets/edaSecond.html" width=800 height=600 frameBorder=0></iframe>
+### Hypothesis Testing 👩🏻‍🔬
 
-<iframe src="assets/edaThird.html" width=800 height=600 frameBorder=0></iframe>
+**Null Hypothesis**: The distribution of salaries of different company sizes is drawn from the same population, and any differences in the distribution are purely conincidental.
+
+**Alternative Hypothesis**: The differences in salaries are not purely coincidental
+
+**Test Statistic**: Means
+
+**p-value**: 0.0
+
+**Conclusion**: It is highly unlikely that the difference in means are purely coincidental. Thus, we reject the null hypothesis
+
+<iframe src="assets/hypothesis.html" width=800 height=600 frameBorder=0></iframe>
 
