@@ -133,6 +133,32 @@ As part of our EDA we explored the relationship and the distribution of the foll
 
 **Evaluation Metric**: R²
 
+---
+
 #### Baseline Model 🧩
+The Baseline Model uses `work_year` and `employee_type` as features. Our model procured a R^2^ score 0.01. This is an extremely poor score and it implies that the baseline model cannot quite capture the nature of the data points. 
 
 <iframe src="assets/baseline.html" width=800 height=600 frameBorder=0></iframe>
+
+---
+
+#### Final Model 🏆
+**Feature Engineering**: For the final model, we conducted further EDA and created more data visualizations. Here are the features we either considered or used for the final model:
+
+1. `work_year` and `employment_type`: These two categorical variables were one-hot encoded. These variables seem closely related to the salary variable, as `salary_in_usd` increases with each `work_year` and the amount of compensation would depend on whether the employee is working full time, part time, or as freelance.
+
+2. `company_size`: Deriving from the graph below, the size of the company is likely a factor in the compensation earned by its employees. We one-hot encoded this categorical feature as well.
+
+<iframe src="assets/edaSecond.html" width=800 height=600 frameBorder=0></iframe>
+
+3. `experience_level`: The experience of the individual would assumably play a huge role in deriving their compensation. However, simply one-hot encoding would not be appropriate, as Executive level is more valued than intermediate level or entry level. Thus, we decided to ordinally encode this feature.
+
+<iframe src="assets/exp_lvl.html" width=800 height=600 frameBorder=0></iframe>
+
+4. `remote_ratio`: From the overlaid histograms and boxplots below, it is apparent that `remote_ratio` is also closely related to `salary_in_usd`. This numeric feature was simply passed through the model and was not engineered.
+
+Our final model procured a R^2^ score of 0.2, which is significant rise from the baseline model's score. However, this model can be further improved or maybe another model may fit the data better than Linear Regression. It is crucial to note that a R^2^ score of 0.2 is also significant because the response variable, **salary** is an economic variable that is affected by several macroeconomic and idustry factors. 
+
+<iframe src="assets/final_mdl.html" width=800 height=600 frameBorder=0></iframe>
+
+---
