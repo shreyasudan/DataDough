@@ -2,6 +2,8 @@
 
 DataDough is a comprehensive analysis of publicly available data sourced from [kaggle](https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023), conducted by Shreya Sudan. It encompasses a series of rigorous analytical procedures, including data cleansing, exploratory data analysis, data visualizations, hypothesis testing, and predictive analysis.
 
+---
+
 ## Introduction 🤓
 Welcome to DataDough, a data science project focused on exploring the fascinating realm of data and uncovering insights related to salaries of data scientists. In today's data-driven world, understanding the factors that influence data scientists' salaries is crucial for both professionals and organizations alike. This project aims to shed light on the various factors that contribute to the salaries of data scientists and provide valuable insights into this ever-evolving field.
 
@@ -48,7 +50,10 @@ Here is a preview of the `salary` dataset:
 |        2023 | SE                 | FT                | Data Scientist           |   175000 | USD               |          175000 | CA                   |            100 | CA                 | M              |
 |        2023 | SE                 | FT                | Data Scientist           |   120000 | USD               |          120000 | CA                   |            100 | CA                 | M              |
 
+---
+
 ## Part I : Inferential Analysis 🔬🔬
+
 ### Data Cleaning 🧹 🧽
 After looking at some preliminary statistics for `salary`, we decided to undertake the following steps to clean our data and prepare it for use:
 
@@ -78,6 +83,8 @@ And the first few rows of the cleaned dataset `salary`
 |        2023 | SE                 | FT                | Data Scientist           |   175000 | USD               |          175000 | CA                   |              1 | CA                 | M              |
 |        2023 | SE                 | FT                | Data Scientist           |   120000 | USD               |          120000 | CA                   |              1 | CA                 | M              |
 
+---
+
 ### EDA 📊
 As part of our EDA we explored the relationship and the distribution of the following variables:
 1. The Distribution of `salary_in_usd`
@@ -95,6 +102,8 @@ As part of our EDA we explored the relationship and the distribution of the foll
     
       <iframe src="assets/edaThird.html" width=800 height=600 frameBorder=0></iframe>
 
+---
+
 ### Hypothesis Testing 👩🏻‍🔬
 
 **Null Hypothesis**: The distribution of salaries of different company sizes is drawn from the same population, and any differences in the distribution are purely conincidental.
@@ -109,7 +118,10 @@ As part of our EDA we explored the relationship and the distribution of the foll
 
 <iframe src="assets/hypothesis.html" width=800 height=600 frameBorder=0></iframe>
 
+---
+
 ## Part II : Predictive Analysis 🔮🔮
+
 ### Linear Regression 📈📈
 #### Framing the Problem 🧮 🤔
 
