@@ -39,6 +39,37 @@ Here are the components of our project:
 By the end of DataDough, we aim to provide a comprehensive understanding of the salary landscape for data scientists, empowering both individuals and organizations with actionable insights. Whether you are a data scientist seeking to benchmark your salary or an organization looking to attract and retain top talent, this project strives to offer valuable information and assist in data-driven decision-making.
 
 Here is a preview of the `salary` dataset:
+
+|   work_year | experience_level   | employment_type   | job_title                |   salary | salary_currency   |   salary_in_usd | employee_residence   |   remote_ratio | company_location   | company_size   |
+|------------:|:-------------------|:------------------|:-------------------------|---------:|:------------------|----------------:|:---------------------|---------------:|:-------------------|:---------------|
+|        2023 | SE                 | FT                | Principal Data Scientist |    80000 | EUR               |           85847 | ES                   |            100 | ES                 | L              |
+|        2023 | MI                 | CT                | ML Engineer              |    30000 | USD               |           30000 | US                   |            100 | US                 | S              |
+|        2023 | MI                 | CT                | ML Engineer              |    25500 | USD               |           25500 | US                   |            100 | US                 | S              |
+|        2023 | SE                 | FT                | Data Scientist           |   175000 | USD               |          175000 | CA                   |            100 | CA                 | M              |
+|        2023 | SE                 | FT                | Data Scientist           |   120000 | USD               |          120000 | CA                   |            100 | CA                 | M              |
+
+## Part I : Inferential Analysis 🔬🔬
+### Data Cleaning 🧹 🧽
+After looking at some preliminary statistics for `salary`, we decided to undertake the following steps to clean our data and prepare it for use:
+
+1. `remote_ratio` column was divided by 100 to ensure scalability and correctness if the column were to be used as a numeric feature in a model.
+2. `work_year` was converted to string type as it is a categorical feature here and the interpretation of the 'mean' of the `work_year` in the descriptive statistics is meaningless.
+
+Here are the premliminary descriptive statistics of `salary`:
+
+|       |   work_year |        salary |   salary_in_usd |   remote_ratio |
+|:------|------------:|--------------:|----------------:|---------------:|
+| count | 3755        |   3755        |          3755   |      3755      |
+| mean  | 2022.37     | 190696        |        137570   |        46.2716 |
+| std   |    0.691448 | 671677        |         63055.6 |        48.5891 |
+| min   | 2020        |   6000        |          5132   |         0      |
+| 25%   | 2022        | 100000        |         95000   |         0      |
+| 50%   | 2022        | 138000        |        135000   |         0      |
+| 75%   | 2023        | 180000        |        175000   |       100      |
+| max   | 2023        |      3.04e+07 |        450000   |       100      | 
+
+And the first few rows of the cleaned dataset `salary`
+
 |   work_year | experience_level   | employment_type   | job_title                |   salary | salary_currency   |   salary_in_usd | employee_residence   |   remote_ratio | company_location   | company_size   |
 |------------:|:-------------------|:------------------|:-------------------------|---------:|:------------------|----------------:|:---------------------|---------------:|:-------------------|:---------------|
 |        2023 | SE                 | FT                | Principal Data Scientist |    80000 | EUR               |           85847 | ES                   |            100 | ES                 | L              |
