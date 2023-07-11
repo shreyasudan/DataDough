@@ -72,9 +72,16 @@ And the first few rows of the cleaned dataset `salary`
 
 |   work_year | experience_level   | employment_type   | job_title                |   salary | salary_currency   |   salary_in_usd | employee_residence   |   remote_ratio | company_location   | company_size   |
 |------------:|:-------------------|:------------------|:-------------------------|---------:|:------------------|----------------:|:---------------------|---------------:|:-------------------|:---------------|
-|        2023 | SE                 | FT                | Principal Data Scientist |    80000 | EUR               |           85847 | ES                   |            100 | ES                 | L              |
-|        2023 | MI                 | CT                | ML Engineer              |    30000 | USD               |           30000 | US                   |            100 | US                 | S              |
-|        2023 | MI                 | CT                | ML Engineer              |    25500 | USD               |           25500 | US                   |            100 | US                 | S              |
-|        2023 | SE                 | FT                | Data Scientist           |   175000 | USD               |          175000 | CA                   |            100 | CA                 | M              |
-|        2023 | SE                 | FT                | Data Scientist           |   120000 | USD               |          120000 | CA                   |            100 | CA                 | M              |
+|        2023 | SE                 | FT                | Principal Data Scientist |    80000 | EUR               |           85847 | ES                   |              1 | ES                 | L              |
+|        2023 | MI                 | CT                | ML Engineer              |    30000 | USD               |           30000 | US                   |              1 | US                 | S              |
+|        2023 | MI                 | CT                | ML Engineer              |    25500 | USD               |           25500 | US                   |              1 | US                 | S              |
+|        2023 | SE                 | FT                | Data Scientist           |   175000 | USD               |          175000 | CA                   |              1 | CA                 | M              |
+|        2023 | SE                 | FT                | Data Scientist           |   120000 | USD               |          120000 | CA                   |              1 | CA                 | M              |
+
+
+<iframe src="assets/edaFirst.html" width=800 height=600 frameBorder=0></iframe>
+
+<iframe src="assets/edaSecond.html" width=800 height=600 frameBorder=0></iframe>
+
+<iframe src="assets/edaThird.html" width=800 height=600 frameBorder=0></iframe>
 
