@@ -105,7 +105,22 @@ As part of our EDA we explored the relationship and the distribution of the foll
 
 **p-value**: 0.0
 
-**Conclusion**: It is highly unlikely that the difference in means are purely coincidental. Thus, we reject the null hypothesis
+**Conclusion**: It is highly unlikely that the difference in means are purely coincidental. Thus, we reject the null hypothesis.
 
 <iframe src="assets/hypothesis.html" width=800 height=600 frameBorder=0></iframe>
 
+## Part II : Predictive Analysis 🔮🔮
+### Linear Regression 📈📈
+#### Framing the Problem 🧮 🤔
+
+**Prediction Problem**: Predict the salaries of data scientists in USD
+
+**Response Variable**: `salary_in_usd`
+
+**Regressors**: `work_year`, `employee_type`
+
+**Evaluation Metric**: R²
+
+#### Baseline Model 🧩
+
+<iframe src="assets/baseline.html" width=800 height=600 frameBorder=0></iframe>
