@@ -1,4 +1,4 @@
-# DataDough 💸🤑
+# DataDough 💸
 
 DataDough is a comprehensive analysis of publicly available data sourced from [kaggle](https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023), conducted by Shreya Sudan. It encompasses a series of rigorous analytical procedures, including data cleansing, exploratory data analysis, data visualizations, hypothesis testing, and predictive analysis.
 
