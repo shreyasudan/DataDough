@@ -14,23 +14,23 @@ This project not only seeks to answer questions about salary trends but also aim
 To accomplish these objectives, we employ a range of analytical techniques and tools, including data preprocessing, exploratory data analysis, feature engineering, and machine learning algorithms. The project utilizes popular libraries like pandas, scikit-learn, and plotly to perform data manipulation, modeling, and visualization.
 
 Here are the components of our project:
-- [Part I : Inferential Analysis](## Part I : Inferential Analysis 🔬🔬)
+- [Part I : Inferential Analysis](#p1)
 
-    - [Data Cleaning](### Data Cleaning 🧹 🧽)
+    - Data Cleaning
     
-    - [Exploratory Data Analysis (EDA)](### EDA 📊)
+    - Exploratory Data Analysis (EDA)
     
-    - [Hypothesis Testing](### Hypothesis Testing 👩🏻‍🔬)
+    - Hypothesis Testing
     
-- [Part II : Predictive Analysis](## Part II : Predictive Analysis 🔮🔮)
+- [Part II : Predictive Analysis](#p2)
 
-    - [Linear Regression Model](### Linear Regression 📈📈)
+    - Linear Regression Model
     
-        - [Framing the Problem](#### Framing the Problem 🧮 🤔)
+        - Framing the Problem
         
-        - [Baseline Model](#### Baseline Model 🧩)
+        - Baseline Model
         
-        - [Feature Engineering & Final Model]()
+        - Feature Engineering & Final Model
         
     - Multiclass Classification
     
@@ -51,7 +51,7 @@ Here is a preview of the `salary` dataset:
 |        2023 | SE                 | FT                | Data Scientist           |   120000 | USD               |          120000 | CA                   |            100 | CA                 | M              |
 
 ---
-
+<a name='p1'></a>
 ## Part I : Inferential Analysis 🔬🔬
 
 ### Data Cleaning 🧹 🧽
@@ -119,7 +119,7 @@ As part of our EDA we explored the relationship and the distribution of the foll
 <iframe src="assets/hypothesis.html" width=800 height=600 frameBorder=0></iframe>
 
 ---
-
+<a name='p2'></a>
 ## Part II : Predictive Analysis 🔮🔮
 
 ### Linear Regression 📈📈
@@ -162,3 +162,29 @@ Our final model procured a R^2^ score of 0.2, which is significant rise from the
 <iframe src="assets/final_mdl.html" width=800 height=600 frameBorder=0></iframe>
 
 ---
+
+### Multiclass Classification 📋
+#### Framing the Problem 🧮 🤔
+**Prediction Problem**: Predict the experience level of data scientists
+
+**Response Variable**: `experience_level`
+
+**Features**: `employee_type`, `company_size`
+
+**Evaluation Metric** : Accuracy
+
+---
+
+#### Random Forest Classifier 🌴🌴
+
+<iframe src="assets/randomforest.html" width=800 height=600 frameBorder=0></iframe>
+
+---
+
+#### Decision Trees 🌳🌳
+
+<iframe src="assets/decisiontrees.html" width=800 height=600 frameBorder=0></iframe>
+
+---
+
+## Conclusion 🏁🏁
