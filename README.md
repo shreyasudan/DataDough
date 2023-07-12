@@ -38,6 +38,8 @@ Here are the components of our project:
         
         - Decision Trees
 
+- [Conclusion](#conclusion)
+
 By the end of DataDough, we aim to provide a comprehensive understanding of the salary landscape for data scientists, empowering both individuals and organizations with actionable insights. Whether you are a data scientist seeking to benchmark your salary or an organization looking to attract and retain top talent, this project strives to offer valuable information and assist in data-driven decision-making.
 
 Here is a preview of the `salary` dataset:
@@ -186,5 +188,5 @@ Our final model procured a R^2^ score of 0.2, which is significant rise from the
 <iframe src="assets/decisiontree.html" width=800 height=600 frameBorder=0></iframe>
 
 ---
-
+<a name='conclusion'></a>
 ## Conclusion 🏁🏁
