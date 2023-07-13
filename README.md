@@ -187,6 +187,10 @@ Our final model procured a R^2^ score of 0.2, which is significant rise from the
 
 <iframe src="assets/decisiontreebaseline.html" width=800 height=600 frameBorder=0></iframe>
 
+---
+
+### Final Classification Model 
+
 <iframe src="assets/final_classification.html" width=800 height=600 frameBorder=0></iframe>
 
 ---
